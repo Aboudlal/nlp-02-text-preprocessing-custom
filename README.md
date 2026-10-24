@@ -1,8 +1,8 @@
-# nlp-02-text-preprocessing
+# nlp-02-text-preprocessing-custom
 
 [![Python 3.14](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](pyproject.toml)
-[![CI](https://github.com/denisecase/nlp-02-text-preprocessing/actions/workflows/ci-python-zensical.yml/badge.svg)](https://github.com/denisecase/nlp-02-text-preprocessing/actions/workflows/ci-python-zensical.yml)
-[![Documentation](https://img.shields.io/badge/docs-site-blue?logo=github)](https://denisecase.github.io/nlp-02-text-preprocessing/)
+[![CI](https://github.com/Aboudlal/nlp-02-text-preprocessing-custom/actions/workflows/ci-python-zensical.yml/badge.svg)](https://github.com/Aboudlal/nlp-02-text-preprocessing-custom/actions/workflows/ci-python-zensical.yml)
+[![Documentation](https://img.shields.io/badge/docs-site-blue?logo=github)](https://aboudlal.github.io/nlp-02-text-preprocessing-custom/)
 
 [![uv managed](https://img.shields.io/badge/uv-managed-DE5FE9)](https://docs.astral.sh/uv/)
 [![ty type checked](https://img.shields.io/badge/ty-type_checked-2F80ED)](https://docs.astral.sh/ty/)
@@ -13,29 +13,33 @@
 
 ## Project Overview
 
-Author: Denise Case
+Author: Abdellah Boudlal
 
-Date: 2026 October
+Date: 2026-10
 
 Second project in the Web Mining and Applied NLP course.
 
-This project introduces text preprocessing,
-an important foundation for natural language processing.
+This project explores how text preprocessing changes the vocabulary
+and word frequencies of a collection of documents.
 
-The goal is to read text data,
-apply common preprocessing techniques,
-compare raw and cleaned text,
-and understand how preprocessing decisions affect analysis.
+I will customize the example using a small dataset of product reviews
+and compare the results of different stop word filtering choices.
+
+The analysis uses Python for text preprocessing, Polars for frequency
+tables, and Matplotlib for visualizations.
 
 The project is configured in
 [pyproject.toml](pyproject.toml).
 
 ## Data
 
-The example uses text records stored in
+The initial example uses text records stored in
 [data/text_data.txt](data/text_data.txt).
 
 Each line represents one text record.
+
+The planned customization will use at least 10 product review records
+and document their source or authorship.
 
 The project combines these records and applies
 several preprocessing operations to prepare
@@ -127,7 +131,7 @@ uv run python -m pytest
 
 ## Project Documentation
 
-The [hosted documentation site](https://denisecase.github.io/nlp-02-text-preprocessing/)
+The [hosted documentation site](https://aboudlal.github.io/nlp-02-text-preprocessing-custom/)
 is published using Zensical and GitHub Pages.
 
 The documentation site is used to present the project report,
@@ -141,8 +145,8 @@ to check project files and publish the docs.
 
 GitHub Actions include:
 
-- [CI: Python and Documentation Checks](https://github.com/denisecase/nlp-02-text-preprocessing/actions/workflows/ci-python-zensical.yml)
-- [CD: Documentation Deployment](https://github.com/denisecase/nlp-02-text-preprocessing/actions/workflows/deploy-zensical.yml)
+- [CI: Python and Documentation Checks](https://github.com/Aboudlal/nlp-02-text-preprocessing-custom/actions/workflows/ci-python-zensical.yml)
+- [CD: Documentation Deployment](https://github.com/Aboudlal/nlp-02-text-preprocessing-custom/actions/workflows/deploy-zensical.yml)
 
 ## Developer Reference
 
@@ -156,7 +160,6 @@ With the project open in VS Code, open a VS Code terminal.
 Paste each command and hit Enter or Return after to run it.
 
 ```shell
-uvx pup-clean --delete
 uv self update
 uv python pin 3.14
 uv python install
@@ -211,7 +214,8 @@ git push -u origin main
 ## Developer Notes
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
-- Use `CTRL+f` to find (and replace) text within a file.
+- Use `Ctrl+F` to find text within a file.
+- Use `Ctrl+H` to find and replace text within a file.
 
 ## Developer Tools
 
@@ -227,7 +231,14 @@ testing, documentation, and code quality.
 
 ## Links
 
-- [Hosted Documentation](https://denisecase.github.io/nlp-02-text-preprocessing/)
+- [Hosted Documentation](https://aboudlal.github.io/nlp-02-text-preprocessing-custom/)
 - [Professional Python Workflow Guide](https://denisecase.github.io/pro-analytics-02/)
 - [Citation](CITATION.cff)
 - [License](LICENSE)
+
+## Acknowledgment
+
+Adapted from Denise Case's
+[nlp-02-text-preprocessing example project](https://github.com/denisecase/nlp-02-text-preprocessing).
+
+The original example provides the foundation for this custom project.
