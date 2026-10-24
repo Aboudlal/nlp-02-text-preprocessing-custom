@@ -1,3 +1,6 @@
+# Author: Abdellah Boudlal
+# Date: 2026-10
+
 """text_preprocessing.py - Project script (example).
 
 Purpose

@@ -1,3 +1,6 @@
+# Author: Abdellah Boudlal
+# Date: 2026-10
+
 """NLP package.
 
 This file can be left empty; it just has to exist.

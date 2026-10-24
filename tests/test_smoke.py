@@ -1,3 +1,6 @@
+# Author: Abdellah Boudlal
+# Date: 2026-10
+
 """Offline smoke test for the text preprocessing example."""
 
 import runpy
